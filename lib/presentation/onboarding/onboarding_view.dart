@@ -10,7 +10,9 @@ class OnboardingView extends StatefulWidget {
 class _OnboardingViewState extends State<OnboardingView> {
   @override
   Widget build(BuildContext context) {
-    return  Container();
+    return const Scaffold(
+      backgroundColor: Colors.green,
+      body: Center(child: Text("welcome to onboarding")),
+    );
   }
 }
-

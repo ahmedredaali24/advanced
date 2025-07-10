@@ -8,4 +8,9 @@ class ColorManger {
   static const Color lighterGray = Color(0xff737477);
   static const Color lightGray = Color(0xff9E9E9E);
   static const Color iconColor = Color(0xff858585);
+
+  static const Color darkPrimary = Color(0xffd17d11);
+  static const Color lightPrimary = Color(0xccd17d11);
+
+  static const Color error = Color(0xffe61f34);
 }

@@ -1,6 +1,7 @@
 import 'package:advanced_app/presentation/forget_password/forget_password_view.dart';
 import 'package:advanced_app/presentation/login/login_view.dart';
 import 'package:advanced_app/presentation/main/main_view.dart';
+import 'package:advanced_app/presentation/onboarding/onboarding_view.dart';
 import 'package:advanced_app/presentation/register/register_view.dart';
 import 'package:advanced_app/presentation/resources/string_manager.dart';
 import 'package:advanced_app/presentation/splash/splash_view.dart';
@@ -9,6 +10,7 @@ import 'package:flutter/material.dart';
 
 class RouteName {
   static const String splashRoute = "/";
+  static const String onboardingRoute = "/onboarding";
   static const String loginRoute = "/login";
   static const String registerRoute = "/register";
   static const String passwordRoute = "/password";
@@ -22,6 +24,8 @@ class RouteGenerator {
     switch (setting.name) {
       case RouteName.splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashView());
+      case RouteName.onboardingRoute:
+        return MaterialPageRoute(builder: (_) => const OnboardingView());
       case RouteName.loginRoute:
         return MaterialPageRoute(builder: (_) => const LoginView());
       case RouteName.registerRoute:

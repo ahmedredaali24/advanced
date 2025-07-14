@@ -50,14 +50,15 @@ ThemeData getApplicationTheme() {
 
     //text
     textTheme: TextTheme(
+        titleMedium: getMediumStyle(color: ColorManger.primary, fontSize: FontSize.s16),
       headlineMedium:
-          getBoldStyle(color: ColorManger.darkGray, fontSize: FontSize.s16),
+          getRegularStyle(color: ColorManger.darkGray, fontSize: FontSize.s18),
       labelMedium:
           getMediumStyle(color: ColorManger.lightGray, fontSize: FontSize.s14),
       labelSmall: getRegularStyle(color: ColorManger.gray),
       bodyMedium: getRegularStyle(color: ColorManger.lightGray),
       displayLarge:
-          getLightStyle(color: ColorManger.white, fontSize: FontSize.s22),
+          getSemiBoldStyle(color: ColorManger.darkGray, fontSize: FontSize.s16),
     ),
     // input decoration
     inputDecorationTheme: InputDecorationTheme(
